@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>tipCalculator</title>
+</head>
+<body>
+    <div id="container">
+       <div>
+          <h1 class="title">Tip Calculator</h1>
+       </div>
+    <div>   
+      <form class="tipsForm" id="tipsForm">
+
+        <label for="bill">
+            <p>How much was the bill ?</p>
+        </label>
+
+            <p>
+            $ <input type="number" placeholder="100$" name="bill" id="bill" class="formInput">
+            </p>
+
+        <label for="serviceHow">
+            <p>Hor was the service ?</p>
+        </label>
+
+            <p>
+                <select name="serviceHow" id="serviceHow" class="formSelect">
+                    <option disable selected value="0">Choose an option</option>
+                    <option value="0.3">30% - Amazing</option>
+                    <option value="0.2">20% - Good</option>
+                    <option value="0.15">15% - Acceptable</option>
+                    <option value="0.1">10% - Bad</option>
+                    <option value="0.05">5% - Terrible</option>
+                </select>
+            </p>
+
+            <label for="people">
+                <p>How many people are going to split the bill ?</p>
+            </label>
+            <p>
+                <input type="number" placeholder="1" name="people" id="people" class="formInput"> people
+            </p>
+            <button type="submit" class="formSubmit">Calculate!</button>
+    </form>
+   </div>
+
+   <div id="totalTip">Total Tip:
+       $<span id="tip">0.00</span>
+       <span id="each">each</span>
+   </div>
+
+  </div>
+
+  <script type="text/javascript" src="scripts.js"></script>
+
+ </body>
+</html>
